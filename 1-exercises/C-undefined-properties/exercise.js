@@ -16,6 +16,8 @@ let car = {
 
 console.log(car["colour"]);
 
+// We see undefined because the car object does not have a color property
+
 // Example 2
 function sayHelloToUser(user) {
   console.log(`Hello ${user.firstName}`);
@@ -27,6 +29,8 @@ let user = {
 
 sayHelloToUser(user);
 
+// We see undefined because the user object, passed to the function, does not have a firstname key
+
 // Example 3
 let myPet = {
   animal: "Cat",
@@ -36,3 +40,5 @@ let myPet = {
 };
 
 console.log(myPet.getName());
+
+// We see undefined because the called function does not return anything
