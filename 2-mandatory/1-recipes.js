@@ -22,4 +22,13 @@
   You should write and log at least 5 recipes
 */
 
-// write code here
+let recipe = {
+  title: "Cottage Chesse",
+  servings: 7,
+  ingredients: ["egg", "sugar", "vanilla extract", "cottage chesse", "baking soda", "flour"]
+};
+
+console.log(recipe.title); 
+console.log(`Serves: ${recipe.servings}`);
+console.log("ingredients:");
+recipe.ingredients.forEach(ingredient => console.log(ingredient));

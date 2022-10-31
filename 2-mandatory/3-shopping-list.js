@@ -19,7 +19,11 @@ let pantry = {
 };
 
 function createShoppingList(recipe) {
-  // write code here
+  const twoPantry = [...pantry.fridgeContents, ...pantry.cupboardContents];
+  const list = recipe.ingredients.filter(
+    (ingredient) => !twoPantry.includes(ingredient)
+  );
+  return {name: recipe.name, items: list};
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
